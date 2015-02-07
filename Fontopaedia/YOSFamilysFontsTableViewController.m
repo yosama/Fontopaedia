@@ -66,8 +66,17 @@
 
 -(NSArray *) sectionIndexTitlesForTableView:(UITableView *)tableView {
     
-    return @[@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",
-             @"V",@"W",@"X",@"Y",@"Z"];
+    
+    NSMutableArray *sectionedArray = [[NSMutableArray alloc] init] ;
+    
+    [sectionedArray autoContentAccessingProxy];
+    
+    for(char c ='A' ; c <= 'Z' ;  c++) {
+        
+        [sectionedArray addObject:[NSString stringWithFormat:@"%c",c]];
+    }
+    return sectionedArray;
+    
 }
 
 
@@ -96,6 +105,25 @@
 }
 
 
+-(NSInteger) tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
+    
+    NSInteger count = 0;
+    
+    for(NSString *character in self.familyNames) {
+       
+        if([character isEqualToString:title])
+        {
+            return count;
+        }
+        count ++;
+    }
+    return 0;
+}
+
+
+
+
+#pragma mark - Table View delegate
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
