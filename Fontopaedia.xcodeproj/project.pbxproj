@@ -12,6 +12,9 @@
 		DB4EF5711A8669B300E0DC8C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4EF5701A8669B300E0DC8C /* Images.xcassets */; };
 		DB4EF5741A8669B300E0DC8C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB4EF5721A8669B300E0DC8C /* LaunchScreen.xib */; };
 		DB4EF5801A8669B300E0DC8C /* FontopaediaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4EF57F1A8669B300E0DC8C /* FontopaediaTests.m */; };
+		DB4EF58B1A866B6F00E0DC8C /* YOSFamilysFontsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4EF58A1A866B6F00E0DC8C /* YOSFamilysFontsTableViewController.m */; };
+		DB4EF5901A866BE400E0DC8C /* YOSFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4EF58E1A866BE400E0DC8C /* YOSFontViewController.m */; };
+		DB4EF5911A866BE400E0DC8C /* YOSFontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB4EF58F1A866BE400E0DC8C /* YOSFontViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,11 @@
 		DB4EF5791A8669B300E0DC8C /* FontopaediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontopaediaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4EF57E1A8669B300E0DC8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB4EF57F1A8669B300E0DC8C /* FontopaediaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontopaediaTests.m; sourceTree = "<group>"; };
+		DB4EF5891A866B6F00E0DC8C /* YOSFamilysFontsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOSFamilysFontsTableViewController.h; sourceTree = "<group>"; };
+		DB4EF58A1A866B6F00E0DC8C /* YOSFamilysFontsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YOSFamilysFontsTableViewController.m; sourceTree = "<group>"; };
+		DB4EF58D1A866BE400E0DC8C /* YOSFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOSFontViewController.h; sourceTree = "<group>"; };
+		DB4EF58E1A866BE400E0DC8C /* YOSFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YOSFontViewController.m; sourceTree = "<group>"; };
+		DB4EF58F1A866BE400E0DC8C /* YOSFontViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YOSFontViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 				DB4EF5701A8669B300E0DC8C /* Images.xcassets */,
 				DB4EF5721A8669B300E0DC8C /* LaunchScreen.xib */,
 				DB4EF5691A8669B300E0DC8C /* Supporting Files */,
+				DB4EF58C1A866B7B00E0DC8C /* Controllers */,
 			);
 			path = Fontopaedia;
 			sourceTree = "<group>";
@@ -109,6 +118,18 @@
 				DB4EF57E1A8669B300E0DC8C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB4EF58C1A866B7B00E0DC8C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB4EF58D1A866BE400E0DC8C /* YOSFontViewController.h */,
+				DB4EF58E1A866BE400E0DC8C /* YOSFontViewController.m */,
+				DB4EF58F1A866BE400E0DC8C /* YOSFontViewController.xib */,
+				DB4EF58A1A866B6F00E0DC8C /* YOSFamilysFontsTableViewController.m */,
+				DB4EF5891A866B6F00E0DC8C /* YOSFamilysFontsTableViewController.h */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB4EF5741A8669B300E0DC8C /* LaunchScreen.xib in Resources */,
+				DB4EF5911A866BE400E0DC8C /* YOSFontViewController.xib in Resources */,
 				DB4EF5711A8669B300E0DC8C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,8 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB4EF58B1A866B6F00E0DC8C /* YOSFamilysFontsTableViewController.m in Sources */,
 				DB4EF56F1A8669B300E0DC8C /* AppDelegate.m in Sources */,
 				DB4EF56C1A8669B300E0DC8C /* main.m in Sources */,
+				DB4EF5901A866BE400E0DC8C /* YOSFontViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
