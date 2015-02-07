@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "YOSFamilysFontsTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,9 +18,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    
+    YOSFamilysFontsTableViewController *fontTVC = [[YOSFamilysFontsTableViewController alloc] initWithStyle:UITableViewStylePlain];
+
+    UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:fontTVC];
+    
+    self.window.rootViewController = navVC;
+    
+    
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
